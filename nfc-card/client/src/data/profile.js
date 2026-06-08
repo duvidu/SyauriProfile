@@ -4,7 +4,7 @@ const profile = {
   company: "The Brand Co.",
   bio: "Location : 212/a/1, Pattiyawatta Road, Kothalawala, Kaduwela",
 
-  phone: "0700000000",
+  phone: "0710000000",
   email: "sayurialwis77@gmail.com",
   website: "https://sayualwis.com",
 
