@@ -18,7 +18,7 @@ function App() {
     fullName: "Sayuri Alwis",
     title: "Creative Entrepreneur",
     company: "The Brand Co.",
-    bio: "Location: 212/A/1, Pattiyawatta Road, Kothalawala, Kaduwela",
+    bio: "Location:  Pattiyawatta Road, Kothalawala, Kaduwela",
 
     phone: "0716000000",
     email: "sayurialwis77@gmail.com",
