@@ -1,5 +1,5 @@
-import profilePic from "./assets/sayu.jpg";
-import coverPic from "./assets/sayuriback.png";
+import profilePic from "./assets/duvi.jpeg";
+import coverPic from "./assets/duviback.png";
 
 import {
   FaPhone,
@@ -15,22 +15,23 @@ import {
 
 function App() {
   const profile = {
-    fullName: "Sayuri Alwis",
-    title: "Creative Entrepreneur",
-    company: "The Brand Co.",
-    bio: "Location:  Pattiyawatta Road, Kothalawala, Kaduwela",
+    fullName: "Duvidu Kavinda",
+    title: "Software Engineer",
+    company: "ITIA Technologies",
+    bio: "Location: 717/c/3, Polhena Road, Dalugama, Kelaniya",
 
-    phone: "0716000000",
-    email: "sayurialwis77@gmail.com",
-    website: "https://sayualwis.com",
+    phone: "0720134463",
+    email: "itiatechnologies@gmail.com",
+    website: "https://itia.com",
 
     socials: {
-      facebook: "https://www.facebook.com/share/17Wrp3ygEM/",
-      linkedin: "https://linkedin.com/in/yourusername",
+      facebook: "https://www.facebook.com/share/18uo6uDX2C/",
+      linkedin:
+        "https://www.linkedin.com/in/duvidu-kavinda-514a50286?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
       whatsapp: "https://wa.me/9471600000",
       x: "https://x.com/yourusername",
       instagram:
-        "https://www.instagram.com/sayuri_alwis/?igsh=MXNkd3Jua3pjeTd2ag%3D%3D#",
+        "https://www.instagram.com/kduvidu?igsh=OHlhNjIwcDMyY2xl",
     },
 
     ctas: {
@@ -58,7 +59,7 @@ function App() {
   return (
     <div className="min-h-screen flex items-center justify-center py-6 bg-gray-100">
       <div className="w-[360px] bg-white rounded-3xl shadow-xl overflow-hidden border border-slate-200">
-        
+
         {/* Cover */}
         <div className="relative h-40">
           <img
@@ -67,7 +68,7 @@ function App() {
             className="w-full h-full object-cover"
           />
 
-          <button className="absolute top-3 right-3 bg-[#F8D4D8] rounded-full w-8 h-8 flex items-center justify-center text-black">
+          <button className="absolute top-3 right-3 bg-[#E8EAFF] rounded-full w-8 h-8 flex items-center justify-center text-[#393F86]">
             •••
           </button>
 
@@ -99,20 +100,22 @@ function App() {
             {profile.title} | {profile.company}
           </p>
 
-          <p className="text-sm text-black mt-3">{profile.bio}</p>
+          <p className="text-sm text-black mt-3">
+            {profile.bio}
+          </p>
 
           {/* Action Icons */}
           <div className="flex justify-center gap-3 mt-4">
             <a
               href={`tel:${profile.phone}`}
-              className="w-10 h-10 rounded-full bg-[#F8D4D8] flex items-center justify-center text-black"
+              className="w-10 h-10 rounded-full bg-[#E8EAFF] flex items-center justify-center text-[#393F86] hover:bg-[#D7DBFF] transition"
             >
               <FaPhone className="text-[16px]" />
             </a>
 
             <a
               href={`mailto:${profile.email}`}
-              className="w-10 h-10 rounded-full bg-[#F8D4D8] flex items-center justify-center text-black"
+              className="w-10 h-10 rounded-full bg-[#E8EAFF] flex items-center justify-center text-[#393F86] hover:bg-[#D7DBFF] transition"
             >
               <FaEnvelope className="text-[16px]" />
             </a>
@@ -121,14 +124,14 @@ function App() {
               href={profile.website}
               target="_blank"
               rel="noreferrer"
-              className="w-10 h-10 rounded-full bg-[#F8D4D8] flex items-center justify-center text-black"
+              className="w-10 h-10 rounded-full bg-[#E8EAFF] flex items-center justify-center text-[#393F86] hover:bg-[#D7DBFF] transition"
             >
               <FaGlobe className="text-[16px]" />
             </a>
 
             <button
               onClick={shareProfile}
-              className="w-10 h-10 rounded-full bg-[#F8D4D8] flex items-center justify-center text-black"
+              className="w-10 h-10 rounded-full bg-[#E8EAFF] flex items-center justify-center text-[#393F86] hover:bg-[#D7DBFF] transition"
             >
               <FaShareNodes className="text-[16px]" />
             </button>
@@ -138,7 +141,7 @@ function App() {
           <div className="flex gap-3 mt-5">
             <a
               href={`tel:${profile.phone}`}
-              className="flex-1 rounded-full bg-[#E493A7] text-white text-sm font-medium py-2 text-center"
+              className="flex-1 rounded-full bg-[#393F86] hover:bg-[#2E336E] transition text-white text-sm font-medium py-2 text-center"
             >
               Save Contact
             </a>
@@ -147,7 +150,7 @@ function App() {
               href={`https://wa.me/${profile.phone}`}
               target="_blank"
               rel="noreferrer"
-              className="flex-1 rounded-full bg-[#E493A7] text-white text-sm font-medium py-2 text-center"
+              className="flex-1 rounded-full bg-[#393F86] hover:bg-[#2E336E] transition text-white text-sm font-medium py-2 text-center"
             >
               Exchange Contact
             </a>
@@ -201,7 +204,7 @@ function SocialIcon({ href, Icon }) {
       href={href}
       target="_blank"
       rel="noreferrer"
-      className="w-11 h-11 rounded-full bg-[#F8D4D8] flex items-center justify-center text-black"
+      className="w-11 h-11 rounded-full bg-[#E8EAFF] flex items-center justify-center text-[#393F86] hover:bg-[#D7DBFF] transition"
     >
       <Icon className="text-lg" />
     </a>
@@ -215,7 +218,7 @@ function CTAButton({ href, icon, text }) {
       href={href}
       target="_blank"
       rel="noreferrer"
-      className="mt-4 w-full flex items-center justify-between px-4 py-3 rounded-full bg-[#E493A7] text-white text-sm font-medium"
+      className="mt-4 w-full flex items-center justify-between px-4 py-3 rounded-full bg-[#393F86] hover:bg-[#2E336E] transition text-white text-sm font-medium"
     >
       <span>{text}</span>
       <span className="text-xl">{icon}</span>
